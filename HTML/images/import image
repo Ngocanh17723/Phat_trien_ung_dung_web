@@ -1,0 +1,14 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trang của tôi</title>
+</head>
+<body>
+    <h1>Chào mừng đến với trang của tôi</h1>
+    <h2>HTML Image</h2>
+<img src="https://vn.images.search.yahoo.com/images/view;_ylt=Awr1TaMXwuRkPP06yWJtUwx.;_ylu=c2VjA3NyBHNsawNpbWcEb2lkAzY0N2RmOTRjODU1YmEzN2M2NTc0MDNmMzA1MGI2YzljBGdwb3MDMTIEaXQDYmluZw--?back=https%3A%2F%2Fvn.images.search.yahoo.com%2Fsearch%2Fimages%3Fp%3D%25E1%25BA%25A3nh%2B%25C4%2591%25E1%25BB%2593%2B%25C4%2583n%2Bnhanh%26type%3DE210VN91215G0%26fr%3Dmcafee%26fr2%3Dpiv-web%26tab%3Dorganic%26ri%3D12&w=800&h=533&imgurl=statics.vincom.com.vn%2Fxu-huong%2Fchi_tiet_xu_huong%2F1%2F14-4%2F3%2Fdo-an-nhanh-cho-nguoi-ban-ron.jpg&rurl=https%3A%2F%2Fvincom.com.vn%2Ftrend%2Fdo-an-nhanh&size=165.8KB&p=%E1%BA%A3nh+%C4%91%E1%BB%93+%C4%83n+nhanh&oid=647df94c855ba37c657403f3050b6c9c&fr2=piv-web&fr=mcafee&tt=%C4%90%E1%BB%93+%C4%83n+nhanh+l%C3%A0+g%C3%AC%3F+TOP+m%C3%B3n+%C4%83n+nhanh+c%C3%B3+l%E1%BB%A3i+cho+s%E1%BB%A9c+kh%E1%BB%8Fe+%7C+Vincom+%7C+Vincom&b=0&ni=21&no=12&ts=&tab=organic&sigr=SQxR1VscLQa0&sigb=aY9Vk9Bpw4_n&sigi=_dPrmDcK_GbS&sigt=icfxwBCf6reH&.crumb=9lWHPPNfwcN&fr=mcafee&fr2=piv-web&type=E210VN91215G0" alt="Trulli" width="500" height="333">
+    <p>Hãy nhấp vào liên kết dưới đây để đến trang khác:</p>
+    <a href="duongdan-cua-trang-khac.html">Đến trang khác</a>
+</body>
+</html>
