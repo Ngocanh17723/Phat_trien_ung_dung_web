@@ -1,0 +1,34 @@
+const daySelect = document.getElementById("day");
+const monthSelect = document.getElementById("month");
+const yearSelect = document.getElementById("year");
+
+// Populate day options
+for (let day = 1; day <= 31; day++) {
+  const option = document.createElement("option");
+  option.value = day;
+  option.textContent = day;
+  daySelect.appendChild(option);
+}
+
+// Populate month options
+const months = [
+  "January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
+
+for (let monthIndex = 0; monthIndex < months.length; monthIndex++) {
+  const option = document.createElement("option");
+  option.value = monthIndex + 1;
+  option.textContent = months[monthIndex];
+  monthSelect.appendChild(option);
+}
+
+// Populate year options
+const currentYear = new Date().getFullYear();
+const startYear = currentYear - 100; // You can adjust the range as needed
+for (let year = currentYear; year >= startYear; year--) {
+  const option = document.createElement("option");
+  option.value = year;
+  option.textContent = year;
+  yearSelect.appendChild(option);
+}
