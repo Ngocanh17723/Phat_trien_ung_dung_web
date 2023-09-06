@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <h1>2121050437-Pham Ngoc Anh</h1>
+  <h1>2121050437-Phạm Ngọc Anh</h1>
 <title>W3.CSS</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body>
 
 <div class="w3-container">
-  <h1>Using w3-margin</h1>
-
-  <div class="w3-border">
-    <div class="w3-container w3-margin w3-green">
-      <p>The w3-margin class adds 16px margin to all sides of an element.</p>
-    </div>
+  <h1>The <strong>w3-display-container</strong> Class</h1>
+  <p>Position of text inside an image</p>
+  
+  <div class="w3-display-container w3-text-white">
+    <img src="img_lights.jpg" alt="Lights" style="width:100%">
+    <div class="w3-padding w3-display-topleft">Top Left</div>
+    <div class="w3-padding w3-display-topright">Top Right</div>
+    <div class="w3-padding w3-display-bottomleft">Bottom Left</div>
+    <div class="w3-padding w3-display-bottomright">Bottom Right</div>
+    <div class="w3-padding w3-display-topmiddle">Top Mid</div>
+    <div class="w3-padding w3-display-left">Left</div>
+    <div class="w3-padding w3-display-right">Right</div>
+    <div class="w3-padding w3-display-middle w3-xxlarge">Middle</div>
+    <div class="w3-padding w3-display-bottommiddle">Bottom Mid</div>
   </div>
 </div>
 <title>W3.CSS</title>
@@ -21,12 +29,19 @@
 <body>
 
 <div class="w3-container">
-  <h1>Using w3-margin-top</h1>
-
-  <div class="w3-border">
-    <div class="w3-container w3-margin-top w3-green">
-      <p>The w3-margin-top class adds a 16px top margin to an element.</p>
-    </div>
+  <h1>The <strong>w3-display-hover</strong> Class</h1>
+  <p>The w3-display-hover class displays content on hover inside a w3-display-container (goes from hidden to shown).</p>
+  
+  <div class="w3-display-container w3-light-grey" style="height:300px;">
+    <div class="w3-display-topleft w3-display-hover">Top Left</div>
+    <div class="w3-display-topright w3-display-hover">Top Right</div>
+    <div class="w3-display-bottomleft w3-display-hover">Bottom Left</div>
+    <div class="w3-display-bottomright w3-display-hover">Bottom Right</div>
+    <div class="w3-display-left w3-display-hover">Left</div>
+    <div class="w3-display-right w3-display-hover">Right</div>
+    <div class="w3-display-middle">Mouse over this box!</div>
+    <div class="w3-display-topmiddle w3-display-hover">Top Mid</div>
+    <div class="w3-display-bottommiddle w3-display-hover">Bottom Mid</div>
   </div>
 </div>
 <title>W3.CSS</title>
@@ -35,22 +50,55 @@
 <body>
 
 <div class="w3-container">
-  <h2>Displaying Sections</h2>
-  <p>The w3-section class adds a 16px top and bottom margin to any HTML element, and can be used to separate sections of HTML content:</p>
+  <h1>The <strong>w3-display-hover</strong> Class</h1>  
+  <div class="w3-display-container w3-hover-opacity" style="width:50%">
+    <img src="img_avatar3.png" alt="Avatar" style="width:100%">
+    <div class="w3-display-middle w3-display-hover w3-xlarge">
+      <button class="w3-button w3-black">John Doe</button>
+    </div>
+  </div>
 </div>
-<div class="w3-container w3-blue">
-  <h1>I am Blue</h1>
-</div>
-<div class="w3-container w3-green">
-  <h1>I am Green</h1>
-</div>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
 
-<div class="w3-container w3-section w3-blue">
-  <h1>I am Blue</h1>
+<div class="w3-display-container w3-margin w3-card-4" style="height:200px;width:350px">
+  <div class="w3-red w3-display-topleft" style="width:25%;height:40%"></div>
+  <div class="w3-red w3-display-topright" style="width:60%;height:40%"></div>
+  <div class="w3-red w3-display-bottomleft" style="width:25%;height:40%"></div>
+  <div class="w3-red w3-display-bottomright" style="width:60%;height:40%"></div>
 </div>
-<div class="w3-container w3-section w3-green">
-  <h1>I am Green</h1>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container">
+  <h2>Floating Classes</h2>
+  <p>The w3-left class floats an element to the left, and the w3-right class floats an element to the right:</p>
+  
+  <div class="w3-bar w3-light-grey">
+    <div class="w3-left w3-red w3-padding">w3-left</div>
+    <div class="w3-right w3-blue w3-padding">w3-right</div>
+  </div>
+</div>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container">
+  <h2>The w3-mobile Class</h2>
+  <p>The <strong>w3-mobile</strong> class adds mobile-first responsivenss to any element.</p>
+  <p>It adds display:block and width:100% to an element on screens that are less than 600px wide.</p>
+
+  <p>Resize the browser window to see the effect:</p>
+  <button class="w3-button w3-black w3-mobile">Home</button>
+  <button class="w3-button w3-black w3-mobile">Link 1</button>
+  <button class="w3-button w3-black w3-mobile">Link 2</button>
+  <button class="w3-button w3-black w3-mobile">Link 3</button>
 </div>
 
 </body>
-</html> 
+</html>
