@@ -6,9 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="counter3.js"></script>
+    ,<script>
+        document.addEventListener('DOMContentLoaded',function(){
+            document.querySelector('#form').onsubmit = function(){
+                alert('Pham NGoc Anh - 2121050437');
+            };
+        });
+    </script>
     <title>My Website</title>
+    <form id="form">
+        <input type="text" id ="name" autofocus placeholder="Name">
+        ,<input type="submit">
+    </form>
 </body>
-<h1 id = "counter">Pham Ngoc Anh 2121050437</h1>
-<button>Click Here</button>
 </html>
