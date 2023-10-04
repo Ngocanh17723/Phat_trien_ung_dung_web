@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<head>
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+            document.querySelector('#form').onsubmit = sayHello;
+        });
+        function sayHello(){
+            const name = document.querySelector('Name').value;
+            alert('Pham Ngoc Anh!');
+        }
+    </script>
+    <title>My Website</title>
+    </head>
+    <body>
+        <form id = "form">
+            <input type="text" id ="name" autofocus placeholder="Pham Ngoc ANh";>
+            <input type="submit">
+        </form>
+    </body>
+</body>
+</html>
