@@ -1,0 +1,69 @@
+<body>
+    <form id="registrationForm" onsubmit="return validateForm()">
+        <label for="username">Họ tên*:</label>
+        <input type="text" id="username" name="username" required><br>
+
+        <label for="username">Tên đăng nhập*:</label>
+        <input type="text" id="username" name="username" required><br>
+
+        <label for="password">Mật khẩu*:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="confirmPassword">Nhập lại mật khẩu*:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required><br>
+
+        <label for="username">Quốc tịch*:</label>
+        <select name="" id="">
+            <option value="">Việt Nam</option>
+            <option value="#"> Thái Bình</option>
+            <option value="#"> Nam Định</option>
+            <option value="#"> Hà Nội</option>
+        </select><br>
+
+        <label for="email">Email*:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="username">Số điện thoai*:</label>
+        <input type="text" id="username" name="username" required><br>
+
+        <label for="username">Câu hỏi bí mật*:</label>
+        <select name="" id="">
+            <option value="">Cấp 1 bạn học trường gì</option>
+            <option value="#"> Thái Bình</option>
+            <option value="#"> Nam Định</option>
+            <option value="#"> Hà Nội</option>
+            <option value="#"> Quảng Ninh</option>
+        </select><br>
+
+        <label for="username">Trả lời*:</label>
+        <input type="text" id="username" name="username" required><br>
+
+        <input type="submit" value="Đăng ký">
+    </form>
+
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+            var email = document.getElementById("email").value;
+
+            if (username.length < 8 || password.length < 1 || confirmPassword.length < 1 || email.indexOf("@") === -1 || email.indexOf(".") === -1) {
+                alert("Vui lòng điền đầy đủ thông tin và kiểm tra lại tên đăng nhập và email.");
+                return false;
+            }
+
+            if (password !== confirmPassword) {
+                alert("Mật khẩu không trùng khớp.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>
+
+</body>
+
+</html>
