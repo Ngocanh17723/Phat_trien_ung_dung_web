@@ -61,6 +61,25 @@
             return true;
         }
     </script>
+
+
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "" || email === "" || password === "") {
+                alert("Vui lòng điền đầy đủ thông tin.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>
+
 </body>
 </html>
 
