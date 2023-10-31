@@ -4,29 +4,42 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script> 
 $(document).ready(function(){
-  $("#flip").click(function(){
-    $("#panel").slideDown("slow");
+  $("button").click(function(){
+    var div = $("div");  
+    div.animate({left: '100px'}, "slow");
+    div.animate({fontSize: '3em'}, "slow");
   });
 });
-</script>
-<style> 
-#panel, #flip {
-  padding: 5px;
-  text-align: center;
-  background-color: #e5eecc;
-  border: solid 1px #c3c3c3;
-}
-
-#panel {
-  padding: 50px;
-  display: none;
-}
-</style>
+</script> 
 </head>
 <body>
- 
-<div id="flip">Pham Ngoc Anh </div>
-<div id="panel">2121050437</div>
+
+<button>Start Animation</button>
+
+<p>Pham ngoc Anh - 2121050437</p>
+<div style="background:#98bf21;height:100px;width:200px;position:absolute;">HELLO</div>
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    var div = $("div");
+    div.animate({height: '300px', opacity: '0.4'}, "slow");
+    div.animate({width: '300px', opacity: '0.8'}, "slow");
+    div.animate({height: '100px', opacity: '0.4'}, "slow");
+    div.animate({width: '100px', opacity: '0.8'}, "slow");
+  });
+});
+</script> 
+</head>
+<body>
+
+<button>Start Animation</button>
+
+<p>Pham Ngoc ANh - 2121050437</p>
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
 
 </body>
 </html>
@@ -36,61 +49,26 @@ $(document).ready(function(){
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script> 
 $(document).ready(function(){
-  $("#flip").click(function(){
-    $("#panel").slideUp("slow");
+  $("button").click(function(){
+    $("div").animate({
+      left: '250px',
+      opacity: '0.5',
+      height: '150px',
+      width: '150px'
+    });
   });
 });
-</script>
-<style> 
-#panel, #flip {
-  padding: 5px;
-  text-align: center;
-  background-color: #e5eecc;
-  border: solid 1px #c3c3c3;
-}
-
-#panel {
-  padding: 50px;
-}
-</style>
+</script> 
 </head>
 <body>
- 
-<div id="flip">Pham Ngoc Anh</div>
-<div id="panel">2121050437</div>
+
+<button>Start Animation</button>
+
+<p>Pham Ngoc Anh -2121050437</p>
+
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
 
 </body>
 </html>
-<!DOCTYPE html>
-<html>
-<head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script> 
-$(document).ready(function(){
-  $("#flip").click(function(){
-    $("#panel").slideToggle("slow");
-  });
-});
-</script>
-<style> 
-#panel, #flip {
-  padding: 5px;
-  text-align: center;
-  background-color: #e5eecc;
-  border: solid 1px #c3c3c3;
-}
 
-#panel {
-  padding: 50px;
-  display: none;
-}
-</style>
-</head>
-<body>
- 
-<div id="flip">Pham Ngoc Anh</div>
-<div id="panel">2121050437</div>
-
-</body>
-</html>
 
