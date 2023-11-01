@@ -2,7 +2,7 @@
 <html>
 <head>
 <style>
-.ancestors * { 
+.descendants * { 
   display: block;
   border: 2px solid lightgrey;
   color: lightgrey;
@@ -13,19 +13,20 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  $("span").parentsUntil("div").css({"color": "red", "border": "2px solid red"});
+  $("div").find("span").css({"color": "red", "border": "2px solid red"});
 });
 </script>
 </head>
+<body>
 
-<body class="ancestors"> body (great-great-grandparent)
-  <div style="width:500px;">div (great-grandparent)
-    <ul>Pham Ngoc Anh
-      <li> 2121050437
-        <span>span</span>
-      </li>
-    </ul>   
-  </div>
+<div class="descendants" style="width:500px;">div (current element) 
+  <p>p (child)
+    <span>2121050437</span>   
+  </p>
+  <p>p (child)
+    <span>Pham Ngoc Anh</span>
+  </p> 
+</div>
+
 </body>
-
 </html>
