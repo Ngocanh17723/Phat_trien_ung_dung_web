@@ -3,23 +3,18 @@
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
-$(document).ready(function(){
-  $("button").click(function(){
-    $.post("demo_test_post.asp",
-    {
-      name: "Donald Duck",
-      city: "Duckburg"
-    },
-    function(data,status){
-      alert("Data: " + data + "\nStatus: " + status);
-    });
+var jq = $.noConflict();
+jq(document).ready(function(){
+  jq("button").click(function(){
+    jq("p").text("2121050437!");
   });
 });
 </script>
 </head>
 <body>
 
-<button>Pham Ngoc Anh - 2121050437</button>
+<p>Pham Ngoc Anh .</p>
+<button>Test jQuery</button>
 
 </body>
 </html>
