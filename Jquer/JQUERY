@@ -4,32 +4,44 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  $("div").first().css("background-color", "yellow");
+  $("button").click(function(){
+    $("#div1").load("demo_test.txt");
+  });
 });
 </script>
 </head>
 <body>
 
-<h1>Welcome to My Homepage</h1>
+<div id="div1"><h2>Pham Ngoc Anh - 2121050437</h2></div>
 
-<p>This is a paragraph.</p>
-
-<div style="border: 1px solid black;">
-  <p>Pham Ngoc Anh</p> 
-  <p>2121050437 .</p>
-</div>
-<br>
-
-<div style="border: 1px solid black;">
-  <p>Pham Ngoc Anh</p>
-  <p>2121050437.</p>
-</div>
-<br>
-
-<div style="border: 1px solid black;">
-  <p>Pham Ngoc Anh</p>
-  <p>2121050437.</p>
-</div>
+<button>Get External Content</button>
 
 </body>
 </html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").load("demo_test.txt", function(responseTxt, statusTxt, xhr){
+      if(statusTxt == "success")
+        alert("External content loaded successfully!");
+      if(statusTxt == "error")
+        alert("Error: " + xhr.status + ": " + xhr.statusText);
+    });
+  });
+});
+</script>
+</head>
+<body>
+
+<div id="div1"><h2>Pham Ngoc Anh - 2121050437</h2></div>
+
+<button>tadaaaaaaaa</button>
+
+</body>
+</html>
+
