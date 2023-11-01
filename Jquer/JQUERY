@@ -2,7 +2,7 @@
 <html>
 <head>
 <style>
-.descendants * { 
+.siblings * { 
   display: block;
   border: 2px solid lightgrey;
   color: lightgrey;
@@ -13,19 +13,21 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  $("div").find("span").css({"color": "red", "border": "2px solid red"});
+  $("h2").nextUntil("h6").css({"color": "red", "border": "2px solid red"});
 });
 </script>
 </head>
-<body>
+<body class="siblings">
 
-<div class="descendants" style="width:500px;">div (current element) 
-  <p>p (child)
-    <span>2121050437</span>   
-  </p>
-  <p>p (child)
-    <span>Pham Ngoc Anh</span>
-  </p> 
+<div>Pham Ngoc Anh - 2121050437
+  <p>p</p>
+  <span>span</span>
+  <h2>h2</h2>
+  <h3>h3</h3>
+  <h4>h4</h4>
+  <h5>h5</h5>
+  <h6>h6</h6>
+  <p>p</p>
 </div>
 
 </body>
