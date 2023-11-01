@@ -1,62 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("button").click(function(){
-    var txt = "";
-    txt += "Document width/height: " + $(document).width();
-    txt += "x" + $(document).height() + "\n";
-    txt += "Window width/height: " + $(window).width();
-    txt += "x" + $(window).height();
-    alert(txt);
-  });
-});
-</script>
-</head>
-<body>
-
-<button>Pham Ngoc Anh - 2121050437</button>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("button").click(function(){
-    var txt = "";
-    txt += "Width of div: " + $("#div1").width() + "</br>";
-    txt += "Height of div: " + $("#div1").height() + "</br>";
-    txt += "Outer width of div: " + $("#div1").outerWidth() + "</br>";
-    txt += "Outer height of div: " + $("#div1").outerHeight();
-    $("#div1").html(txt);
-  });
-});
-</script>
 <style>
-#div1 {
-  height: 100px;
-  width: 300px;
-  padding: 10px;
-  margin: 3px;
-  border: 1px solid blue;
-  background-color: lightblue;
+.ancestors * { 
+  display: block;
+  border: 2px solid lightgrey;
+  color: lightgrey;
+  padding: 5px;
+  margin: 15px;
 }
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("span").parentsUntil("div").css({"color": "red", "border": "2px solid red"});
+});
+</script>
 </head>
-<body>
 
-<div id="div1"></div>
-<br>
-
-<button>Display dimensions of div</button>
-
-<p>Pham Ngoc Anh</p>
-<p>212105437.</p>
-
+<body class="ancestors"> body (great-great-grandparent)
+  <div style="width:500px;">div (great-grandparent)
+    <ul>Pham Ngoc Anh
+      <li> 2121050437
+        <span>span</span>
+      </li>
+    </ul>   
+  </div>
 </body>
+
 </html>
